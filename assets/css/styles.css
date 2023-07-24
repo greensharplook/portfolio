@@ -1,8 +1,11 @@
 /*================> Google Fonts <=================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
 /*==================> Variables <==================*/
-:root { 
+:root {
+	--header-height: 3rem;
+
 	/*===> Colors <===*/
 	/* Purple 250 - Green 142 - Blue 230 - Pink 340 */
 	--hue-color: 250;
@@ -58,4 +61,42 @@
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
   }
+}
+
+
+/*==================> Base styles <================*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 0 var(--header-height) 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+	color: var(--title-color);
+	font-weight: var(--font-semi-bold);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
