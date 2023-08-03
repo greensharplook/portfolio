@@ -681,3 +681,8 @@ img {
 	color: var(--first-color);
 	margin-right: var(--mb-0-25);
 }
+
+.active-modal {
+	opacity: 1;
+	visibility: visible;
+}
